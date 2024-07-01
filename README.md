@@ -1,6 +1,6 @@
 Goal is to create a simple password validator with 
 1) WPF MVVM design pattern
-2) User control for a custom clearable textbox
+2) Feature a clearable textbox 
 
 The password validator requirement is
 1) length of the password is at least 10 and no more than 20 long
