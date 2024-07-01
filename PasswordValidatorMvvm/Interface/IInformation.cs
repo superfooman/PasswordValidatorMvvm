@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PasswordValidatorMvvm.Interface
 {
-    internal interface IInformation
+    public interface IInformation
     {
         string Information 
         { 
