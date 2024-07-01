@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using PasswordValidatorMvvm.ViewModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,17 @@ namespace PasswordValidatorMvvm
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly ValidatorViewModel _validatorViewModel;
         public MainWindow()
         {
             InitializeComponent();
+            _validatorViewModel = new ValidatorViewModel();
+            DataContext = _validatorViewModel;
+        }
+
+        private void checkButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

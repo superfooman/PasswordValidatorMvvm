@@ -4,16 +4,23 @@ namespace PasswordValidatorMvvm.ViewModel
 {
     public class ValidatorViewModel
     {
-        public Validator _validator { get; set; }
+        public Validator Validator { get; set; }
         public ValidatorViewModel() 
-        { 
-            _validator = new Validator();
+        {
+            Validator = new Validator();
         }
+
+        #region string
+        public string ValidateButtonContent
+        {
+            get { return "Validate Passowrd"; }
+        }
+        #endregion
 
         //Can be improved with RelayCommand in the future
         public void ValidatePassword()
         {
-            _validator.ValidatePassword();
+            Validator.ValidatePassword();
         }
 
     }

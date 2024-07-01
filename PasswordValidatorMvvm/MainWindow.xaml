@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordValidatorMvvm"
+        xmlns:viewModels="clr-namespace:PasswordValidatorMvvm.ViewModel"
+        d:DataContext="{d:DesignInstance viewModels:ValidatorViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel>
+            <TextBlock></TextBlock>
+            <TextBox>Check Passowrd</TextBox>
+            <Button x:Name="checkButton" Content="{Binding Path=ValidateButtonContent}"
+                    Style="{StaticResource GeneralButtonStyle}"
+                    Click="checkButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
